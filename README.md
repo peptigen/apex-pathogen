@@ -36,7 +36,7 @@ APEX_models.py: defines the neural network architecture of APEX
 
 utils.py: helper functions
 
-aaindex1.csv: amino acid embeddings; obtained from https://www.genome.jp/aaindex/
+aaindex1.csv: amino acid embeddings; initialized and freezed as AAindex, which can be obtained from https://www.genome.jp/aaindex/
 
 test_seqs.txt: example input of APEX_predict.py; each line is a peptide sequence (<= 50 amino acids)
 
