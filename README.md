@@ -29,6 +29,22 @@ vancomycin-resistant E. faecalis ATCC 700802
 vancomycin-resistant E. faecium ATCC 700221
 
 
+## File description
+Folder APEX_pathogen_models contains the pretrained APEX models (8 in total)
+
+APEX_models.py: defines the neural network architecture of APEX
+
+utils.py: helper functions
+
+aaindex1.csv: amino acid embeddings; obtained from https://www.genome.jp/aaindex/
+
+test_seqs.txt: example input of APEX_predict.py; each line is a peptide sequence (<= 50 amino acids)
+
+Predicted_MICs.csv: example output of APEX_predict.py
+
+APEX_predict.py: predict species-specific antmicrobial activties (minimum inhibitory concentration [MIC]; unit: uM) against 11 pathogens for peptides in test_seqs.txt. We use 8 APEX models trained under different neural network architectures or training strategies to make predictions. Predictions from the base learners will be averaged to generate the final activity prediction. 
+
+
 
 ## Software version
 pytorch: 1.11.0+cu113
