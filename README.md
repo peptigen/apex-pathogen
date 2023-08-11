@@ -1,4 +1,4 @@
-# APEX pathogen - predicting species-specific antimicrobial activity against pathogens
+# APEX pathogen - predicting species-specific antimicrobial activity against pathogens using deep learning
 
 ## Predict AMPs using APEX
 By running APEX_predict.py, species-specific antmicrobial activties (MICs) of peptides in test_seqs.txt will be generated and saved in Predicted_MICs.csv.
